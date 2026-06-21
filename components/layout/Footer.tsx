@@ -8,6 +8,7 @@ import { company, navLinks } from "@/lib/company";
 import { services } from "@/lib/content";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { FacebookIcon, InstagramIcon } from "@/components/ui/SocialIcons";
 
 function FooterPrelude() {
   return (
@@ -160,12 +161,27 @@ export function Footer() {
             <p>
               &copy; {currentYear} {company.legalName}. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              {["LinkedIn", "Twitter", "Facebook"].map((social) => (
-                <span key={social} className="cursor-default transition-colors hover:text-white/70">
-                  {social}
-                </span>
-              ))}
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href={company.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition-colors hover:text-white"
+                aria-label="Follow FleetEx on Instagram"
+              >
+                <InstagramIcon className="h-4 w-4" />
+                Instagram
+              </a>
+              <a
+                href={company.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition-colors hover:text-white"
+                aria-label="Follow FleetEx on Facebook"
+              >
+                <FacebookIcon className="h-4 w-4" />
+                Facebook
+              </a>
             </div>
           </div>
         </Container>

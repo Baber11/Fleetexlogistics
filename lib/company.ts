@@ -22,6 +22,10 @@ export const company = {
   websiteUrl: "https://www.fleetexlogistics.com",
   businessHoursNote:
     "Please contact us by phone or email for current office hours.",
+  social: {
+    instagram: "https://www.instagram.com/fleetex000?igsh=OXdsb3lsMnk5cTU0",
+    facebook: "https://www.facebook.com/share/1DtuY7Wo67/",
+  },
 } as const;
 
 export const navLinks = [
