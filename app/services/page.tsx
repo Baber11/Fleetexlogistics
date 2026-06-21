@@ -21,7 +21,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         title="Our Services"
-        description="Comprehensive freight forwarding and supply chain solutions across air, ocean, and land."
+        description="Comprehensive freight forwarding and supply chain solutions across air,sea , and land."
         image={images.airFreight}
       />
 
